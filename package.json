@@ -6,12 +6,12 @@
   "scripts": {
     "start": "sucrase-node src/main/server.ts",
     "lint-staged": "lint-staged",
-    "test": "jest --passWithNoTests --silent --runInBand",
+    "test": "jest --passWithNoTests --runInBand",
     "test:verbose": "jest --passWithNoTests --runInBand",
     "test:unit": "npm test --  --runInBand --watch -c jest-unit-config.js",
     "test:integration": "npm test -- --watch -c jest-integration-config.js",
     "test:staged": "npm test -- --findRelatedTests",
-    "test:ci": "npm test -- --coverage",
+    "test:ci": "npm test -- --coverage --detectOpenHandles",
     "prepare": "husky install"
   },
   "keywords": [],
