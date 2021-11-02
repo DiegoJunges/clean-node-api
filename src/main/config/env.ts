@@ -1,4 +1,5 @@
 export default {
   mongoUrl: process.env.MONGO_URL || 'mongodb+srv://admin:eaeOWJNyKJ1OAHGj@cluster0.ogurm.mongodb.net/smartranking?retryWrites=true&w=majority',
-  port: process.env.PORT || 5050
+  port: process.env.PORT || 5050,
+  jwtSecret: process.env.JWT_SECRET || 'tJrsewsr58d4'
 }
